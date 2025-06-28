@@ -1,0 +1,153 @@
+:root {
+  --bg: #1e1e1e;
+  --text: #f1f1f1;
+  --border: #444;
+  --accent: #0d99ff;
+  --preview-bg: #ffffff;
+  --editor-bg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content:right ;
+  align-items:center;
+  background: #2b2b2b;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--border);
+  position: relative;
+}
+
+.header .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  right: 50%;
+   position:fixed;
+}
+
+.header .sub-title {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.header .sub-title span {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+#downloadCode {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#downloadCode:hover {
+  opacity: 0.9;
+}
+
+.editors {
+  display: flex;
+  height: 45vh;
+  background: var(--editor-bg);
+  border-bottom: 2px solid var(--border);
+}
+
+.editor-box {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+}
+
+.editor-box:last-child {
+  border-right: none;
+}
+
+.editor-box::before {
+  content: attr(data-lang);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #bbb;
+  margin-bottom: 4px;
+}
+
+.CodeMirror {
+  flex: 1;
+  height: 100%;
+  font-size: 0.9rem;
+  background: var(--editor-bg) !important;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.preview {
+  flex: 1;
+  background-color: var(--preview-bg);
+}
+
+.preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .editors {
+    flex-direction: column;
+  }
+
+  .editor-box {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .editor-box:last-child {
+    border-bottom: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header .sub-title {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin-top: -0.5rem;
+  }
+
+  #downloadCode {
+    width: 100%;
+  }
+}

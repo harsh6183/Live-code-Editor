@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Live Code Editor | Harsh</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Live Code Editor</h1>
+      <p class="sub-title"><span>#</span>Harsh</p>
+      <button id="downloadCode" title="Download Code">⬇️ Download</button>
+    </header>
+
+    <div class="editors">
+      <div class="editor-box" id="html" data-lang="HTML"></div>
+      <div class="editor-box" id="css" data-lang="CSS"></div>
+      <div class="editor-box" id="js" data-lang="JS"></div>
+    </div>
+
+    <div class="preview">
+      <iframe id="live-preview"></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
