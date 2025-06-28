@@ -28,12 +28,6 @@ This is a simple yet powerful **Live Code Editor** that allows you to write and 
 
 ---
 
-## 📸 Preview
-
-![Live Code Editor Screenshot](screenshot.png) <!-- Add screenshot.png in your repo -->
-
----
-
 ## 🔧 How to Use
 
 1. Clone or download this repository.
@@ -55,10 +49,6 @@ This is a simple yet powerful **Live Code Editor** that allows you to write and 
 ## 🧑‍💻 Author
 
 **Harsh Nimbalkar**  
-📧 harshnimbalkar@email.com *(replace with your actual email)*  
-🔗 [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
-
----
 
 ## 📝 License
 
