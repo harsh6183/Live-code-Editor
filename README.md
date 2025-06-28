@@ -1,4 +1,4 @@
-# ⚡ Live Code Editor by Harsh
+# ⚡ Live Code Editor 
 
 This is a simple yet powerful **Live Code Editor** that allows you to write and preview HTML, CSS, and JavaScript code in real-time. It includes features like:
 
