@@ -2,11 +2,11 @@
 
 This is a simple yet powerful **Live Code Editor** that allows you to write and preview HTML, CSS, and JavaScript code in real-time. It includes features like:
 
-- 💻 Side-by-side code editors for HTML, CSS, and JS
-- 📦 CodeMirror integration with dark Dracula theme
-- 🖥 Live preview of your code output
-- ⬇️ Download your combined code as a single HTML file
-- 📱 Fully responsive and mobile-friendly layout
+- 💻 Side-by-side code editors for HTML, CSS, and JS.
+- 📦 CodeMirror integration with dark Dracula theme.
+- 🖥 Live preview of your code output.
+- ⬇️ Download your combined code as a single HTML file.
+- 📱 Fully responsive and mobile-friendly layout.
 
 ---
 
